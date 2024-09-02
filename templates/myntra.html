@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pratice</title>
+</head>
+<body>
+  <h1>Balu</h1>
+  <button onclick="a++;show();">Add to bag</button>
+  <button onclick="a--;show();">Whishlist</button>
+ <button onclick="a+=2;show();">Add 1+1 item</button>
+
+  <p class="para"></p>
+  <script>
+    let a=0;
+    function show()
+    {
+      document.querySelector('.para').innerText = `Your bag has ${a} items`;
+    }
+    show();
+  </script>
+</body>
+</html>
